@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <title>Superman!</title>
+  </head>
+  <body>
+    <!-- Innhold i nettsiden -->
+    <main>
+      <!-- Navigasjonsbar -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Front page</a></li>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="main.html#about">About</a></li>
+          <li><a href="main.html#img-gallery">Images</a></li>
+        </ul>
+      </nav>
+      <h1>Superman saves the day!</h1>
+
+      <!-- Bilde av Clark Kent som skifter til Supermann ved innlasting av side og motsatt ved mouse hover -->
+      <div class="superman-anim">
+        <img
+          class="bottom"
+          src="images/clarkkent-phone.jpg"
+          alt="clark phonebooth"
+        />
+        <img class="top" src="images/superman-pose.jpg" alt="superman!" />
+      </div>
+
+      <!-- Flere avsnitt med informasjon om supermann (Hentet fra wikipedia og dc.fandom.com) -->
+      <h2 id="about">About Superman</h2>
+      <div class="textbox-container">
+        <div class="textbox" id="text1">
+          <h3>Superman origins</h3>
+          <p>
+            Superman was born on the planet Krypton and was given the name
+            Kal-El at birth. As a baby, his parents sent him to Earth in a small
+            spaceship moments before Krypton was destroyed in a natural
+            cataclysm. His ship landed in the American countryside, near the
+            town Smallville. He was found and adopted by farmers Jonathan and
+            Martha Kent, who named him Clark Kent. Clark developed various
+            superhuman abilities, such as incredible strength and impervious
+            skin. His foster parents advised him to use his abilities for the
+            benefit of humanity, and he decided to fight crime as a vigilante.
+            To protect his privacy, he changes into his superhero costume and
+            uses the alias "Superman" when fighting crime. Clark Kent resides in
+            the American city of Metropolis, where he works as a journalist for
+            the Daily Planet.
+          </p>
+        </div>
+        <div class="image" id="img1">
+          <img src="images/leaving-krypton.jpg" alt="Kal-El leaving Krypton" />
+          <p>Kal-El leaving as Krypton is being destroyed</p>
+        </div>
+        <div class="textbox" id="text2">
+          <h3>Powers and abilities</h3>
+          <p>
+            Superman has a wide range of superhuman abilities and powers to aid
+            in his crimefighting. He has superhuman strength, being able to
+            crush coal into diamonds with his bare hands and even shift the
+            orbit of planets. His body is highly durable and invulnerable to
+            almost anything. Bullets bounce harmlessly off his body, and even a
+            nuclear bomb cant stop him. Superman has the ability to fly at great
+            speeds, breaking the sound barrier and in some cases even faster
+            than light to travel to distant galaxies. He can project and
+            percieve X-rays, which allows him to see through objects. His vision
+            can also be amplified to project rays of burning heat, hot enough to
+            melt steel. Superman is able to hear sounds that are too faint for
+            the human ear, and frequencies outside the human hearing range. With
+            these powers combined there's only one man capable of competing with
+            him...
+          </p>
+        </div>
+        <div class="image" id="img2">
+          <img src="images/heat-vision.jpg" alt="Heat vision" />
+          <p>Superman using his heat vision</p>
+        </div>
+        <div class="textbox" id="text3">
+          <h3>Archnemesis</h3>
+          <p>
+            Lex Luthor is one of the most dangerously intelligent men on the
+            planet. He is a super-villain, a brilliant scientist, a billionaire
+            industrialist and Superman's greatest enemy. This combination makes
+            him an extremely powerful and formidable opponent; he is ruthless,
+            efficient and creative. In addition to his personal vendetta against
+            the man who thwarts his every scheme, he despises the alien Man of
+            Steel from an ideological standpoint for contradicting his human
+            achievements. He has always been a controversial figure in the
+            public eye due to LexCorp's corrupt business dealings, but he has
+            also maintained political popularity.
+          </p>
+        </div>
+        <div class="image" id="img3">
+          <img src="images/lex-luthor.jpg" alt="Lex Luthor" />
+          <p>Lex Luthor</p>
+        </div>
+      </div>
+
+      <!-- Bildegalleri med beskrivelser/link til wikipedia sider på mouse hover overlay -->
+      <h2 id="img-gallery">Gallery</h2>
+      <div class="gallery-container">
+        <div id="galleryimg1" class="gallery">
+          <img src="images/superman-1939.jpg" alt="Superman comic #1" />
+          <div class="overlay">
+            <div class="imgText">
+              <a
+                href="https://en.wikipedia.org/wiki/Superman_(comic_book)"
+                target="_blank"
+                >Original Superman comic (1939-1985)</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="galleryimg2" class="gallery">
+          <img src="images/superman-1987.jpg" alt="Superman comic #424" />
+          <div class="overlay">
+            <div class="imgText">
+              <a
+                href="https://en.wikipedia.org/wiki/Superman_(comic_book)#1986_revamp"
+                target="_blank"
+                >The Adventures of Superman (1987-2006)</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="galleryimg3" class="gallery">
+          <img src="images/kirk-alyn.jpg" alt="Kirk Alyn as Superman" />
+          <div class="overlay">
+            <div class="imgText">
+              <a
+                href="https://en.wikipedia.org/wiki/Superman_(serial)"
+                target="_blank"
+                >Kirk Alyn in Superman (Serial) (1948)</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="galleryimg4" class="gallery">
+          <img
+            src="images/christopher-reeve.jpg"
+            alt="Christopher Reeve as Superman"
+          />
+          <div class="overlay">
+            <div class="imgText">
+              <a
+                href="https://en.wikipedia.org/wiki/Superman_(Salkind_films)"
+                target="_blank"
+              >
+                Chistopher Reeve in Superman I-IV (1978-1987)</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="galleryimg5" class="gallery">
+          <img src="images/brandon-routh.jpg" alt="Brandon Routh as Superman" />
+          <div class="overlay">
+            <div class="imgText">
+              <a
+                href="https://en.wikipedia.org/wiki/Superman_Returns"
+                target="_blank"
+                >Brandon Routh in Superman Returns (2006)</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="galleryimg6" class="gallery">
+          <img
+            src="images/henry-cavill-superman.jpg"
+            alt="Henry Cavill as Superman"
+          />
+          <div class="overlay">
+            <div class="imgText">
+              <a
+                href="https://en.wikipedia.org/wiki/Man_of_Steel_(film)"
+                target="_blank"
+                >Henry Cavill in Man of Steel (2013)</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="galleryimg7" class="gallery">
+          <img
+            src="images/batman-v-superman.jpg"
+            alt="Batman v Superman: Dawn of Justice (2016)"
+          />
+          <div class="overlay">
+            <div class="imgText">
+              <a
+                href="https://en.wikipedia.org/wiki/Batman_v_Superman:_Dawn_of_Justice"
+                target="_blank"
+                >Batman v Superman: Dawn of Justice (2016)</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="galleryimg8" class="gallery">
+          <img src="images/justice-league.jpg" alt="Justice Leage (2017)" />
+          <div class="overlay">
+            <div class="imgText">
+              <a
+                href="https://en.wikipedia.org/wiki/Justice_League_(film)"
+                target="_blank"
+                >Justice Leage (2017)</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

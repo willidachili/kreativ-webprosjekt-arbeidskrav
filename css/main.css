@@ -1,0 +1,218 @@
+@import url(
+  https://fonts.googleapis.com/css?family=Source + Sans + Pro:400,
+  900
+);
+
+/* Bakgrunn hentet fra intro.html */
+body {
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/intro-bakgrunn.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Styling av navbar */
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+nav li {
+  float: left;
+}
+
+nav ul {
+  width: 1200px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000b;
+  box-shadow: 0 0 10px 10px #000b;
+}
+
+li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  color: #fff;
+  border-radius: 2px;
+}
+
+li a:hover {
+  background-color: #f00;
+  color: #ff0;
+}
+
+/* Hovedcontainer med responsive rammer */
+main {
+  max-width: 1200px;
+  min-height: 1500px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: #000d;
+  box-shadow: 0 0 15px 20px #000d;
+}
+
+main > div {
+  margin: 10px;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+main h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+/* div klasse med opacity animasjon som gjør at bilde av supermann blir synlig over bildet av Clark Kent */
+.superman-anim {
+  position: relative;
+  height: 800px;
+  width: 550px;
+  margin: 0 auto 100px auto;
+}
+
+.superman-anim img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  transition: opacity 1s ease-in-out;
+}
+
+.superman-anim img.top {
+  animation-name: imgopacity;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+}
+
+.superman-anim img.top:hover {
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+
+@keyframes imgopacity {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* CSS grid for å gjøre tekstboksene og bildene sammenhengende og responsive */
+.textbox-container {
+  display: grid;
+  grid-template: repeat(3, 1fr) / 3fr 1fr;
+  grid-gap: 50px;
+}
+
+.textbox {
+  grid-column-start: 1;
+  text-align: center;
+  font-size: 22px;
+}
+
+.image {
+  grid-column-start: 2;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+  width: 282px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsivt bildegalleri med flexbox, så bildene wrapper naturlig i enden av hovedcontainer */
+.gallery-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery {
+  position: relative;
+  height: 420px;
+  max-width: 280px;
+  overflow: hidden;
+  margin: 5px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Overlay som dukker opp ved mouse hover over hvert bilde */
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000b;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.gallery:hover .overlay {
+  height: 20%;
+}
+
+.imgText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.imgText a {
+  text-decoration: none;
+  color: white;
+}
+
+.imgText a:hover {
+  text-decoration-line: underline;
+}
+
+/* media query som sørger for at tekstboks og bilde deles i hver sin rad i css grid-en ved vindubredde < 800px */
+@media only screen and (max-width: 800px) {
+  .textbox-container {
+    grid-template: 1fr / 1fr;
+    grid-gap: 5px;
+  }
+
+  .textbox,
+  .image {
+    grid-column: 1;
+  }
+
+  .image {
+    width: 400px;
+  }
+}
